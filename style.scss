@@ -3,40 +3,38 @@ html {
 }
 
 header {
-  height: 160px;
+  height: 100px;
   width: auto;
   border: 1px black solid;
-  display: flex;
-  justify-content: right;
   background-color: #f5f5f5;
-  .brand-name {
-    width: 200px;
-    height: 50px;
-    border: 1px black solid;
-    position: absolute;
-    left: 85px;
-    top: 63px;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 49px;
-    color: #10b981;
-  }
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+
   .header-bar {
     display: flex;
     flex-direction: row;
-    //border: 1px black solid;
-    width: 900px;
-    height: 60px;
-    margin-top: 20px;
+    width: 90%;
+    height: 50px;
     padding: 30px;
     font-weight: 500;
     font-size: 16px;
     div {
-      border: 1px black solid;
-      width: fit-content;
-      height: fit-content;
-      line-height: 60px;
-      width: 260px;
+      //border: 1px black solid;
+      width: 280px;
+      height: 40px;
+      margin: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .brand-name {
+      border: none;
+      font-family: "Montserrat";
+      font-style: italic;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 49px;
     }
 
     .search-box {
@@ -44,54 +42,109 @@ header {
       box-shadow: 0px 15px 50px rgba(46, 131, 158, 0.07);
       border-radius: 10px;
       border: none;
-      input {
-        margin-left: 10px;
-        border: none;
-        width: 180px;
-        height: 30px;
-        color: rgba(62, 62, 68, 0.2);
-      }
-      button {
-        margin: 9px;
-        padding-left: 0;
-        padding-right: 0;
-        background: #10b981;
-        border: none;
-        border-radius: 5px;
-        height: 35px;
-        width: 35px;
-        img {
-          width: 20px;
-          height: 15px;
-          //fill: #f5f5f5;
-        }
-      }
     }
-    .cart-box {
-      border-radius: 30px;
-      margin-inline: auto;
-      border: 2px #10b981 solid;
-      text-align: center;
-      img {
-        position: relative;
-        left: -35px;
-        bottom: -6px;
-        width: 30px;
-        height: 25px;
-      }
-    }
-    .login-box {
-      border-radius: 30px;
-      text-align: center;
-      background-color: #10b981;
+    input {
       border: none;
-      color: #f5f5f5;
+      width: 80%;
+      height: 30px;
+      color: rgba(62, 62, 68, 0.2);
+    }
+    button {
+      background: #10b981;
+      border: none;
+      border-radius: 5px;
+      height: 25px;
+      width: 25px;
       img {
-        position: relative;
-        left: -25px;
-        bottom: -6px;
-        width: 30px;
-        height: 25px;
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+  .cart-box {
+    border-radius: 30px;
+    margin-inline: auto;
+    border: 2px #10b981 solid;
+    text-align: center;
+    img {
+      margin-right: 10px;
+      width: 30px;
+      height: 25px;
+    }
+  }
+  .login-box {
+    border-radius: 30px;
+    text-align: center;
+    background-color: #10b981;
+    border: none;
+    color: #f5f5f5;
+    img {
+      margin-right: 10px;
+      width: 30px;
+      height: 25px;
+    }
+  }
+}
+
+.rectangle {
+  height: 80px;
+  width: auto;
+  border: 1px black solid;
+  background-color: #10b981;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    height: 30px;
+    margin: 0 40px;
+    width: 90px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    cursor: pointer;
+    color: #ffffff;
+  }
+}
+.first-content-box {
+  border: black 1px solid;
+  height: 600px;
+  display: flex;
+
+  .first-left-content-box {
+    border: black 1px solid;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 45px;
+    h1 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 64px;
+      line-height: 78px;
+      color: #2b2626;
+    }
+    p {
+      width: 80%;
+    }
+  }
+  .first-left-content-box-bottom {
+    margin-top: auto;
+    margin-bottom: 0;
+    flex-direction: column;
+    display: flex;
+    button {
+      margin: 60% 0;
+    }
+  }
+
+  .first-right-content-box {
+    .first-right-content-box-picture {
+      img {
+        width: 400px;
       }
     }
   }
