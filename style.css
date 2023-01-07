@@ -35,6 +35,7 @@ header .header-bar .brand-name {
   font-weight: 400;
   font-size: 40px;
   line-height: 49px;
+  width: inherit;
 }
 header .header-bar .search-box {
   background: #ffffff;
@@ -107,7 +108,7 @@ header .login-box img {
 
 .first-content-box {
   border: black 1px solid;
-  height: 600px;
+  height: 100%;
   display: flex;
 }
 .first-content-box .first-left-content-box {
@@ -129,6 +130,18 @@ header .login-box img {
 .first-content-box .first-left-content-box p {
   width: 80%;
 }
+.first-content-box .first-left-content-box button {
+  background-color: #10b981;
+  width: 220px;
+  height: 70px;
+  border: none;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  color: #ffffff;
+  font-family: "Montserrat";
+}
 .first-content-box .first-left-content-box-bottom {
   margin-top: auto;
   margin-bottom: 0;
@@ -136,7 +149,22 @@ header .login-box img {
   display: flex;
 }
 .first-content-box .first-left-content-box-bottom button {
-  margin: 60% 0;
+  margin: 40% 0;
+}
+.first-content-box .first-left-content-box-bottom span {
+  display: grid;
+  grid-template-columns: [item-1-start] 33px [item-2-start] 33px [item-3-start] 33px [item-1-end] 65px [item-2-end] 130px [item-3-end];
+  grid-template-rows: [item-1-start] 50px;
+}
+.first-content-box .first-left-content-box-bottom img {
+  width: 50px;
+}
+.first-content-box .first-left-content-box-bottom a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  color: #2b2626;
 }
 .first-content-box .first-right-content-box .first-right-content-box-picture img {
   width: 400px;
