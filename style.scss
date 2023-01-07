@@ -175,8 +175,16 @@ header {
   }
 
   .first-right-content-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     .first-right-content-box-picture {
+      border: black 1px solid;
+      height: 700px;
+      border-radius: 50%;
       img {
+        margin-top: 25%;
         width: 400px;
       }
     }

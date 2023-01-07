@@ -166,6 +166,17 @@ header .login-box img {
   font-size: 23px;
   color: #2b2626;
 }
+.first-content-box .first-right-content-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.first-content-box .first-right-content-box .first-right-content-box-picture {
+  border: black 1px solid;
+  height: 700px;
+  border-radius: 50%;
+}
 .first-content-box .first-right-content-box .first-right-content-box-picture img {
+  margin-top: 25%;
   width: 400px;
 }/*# sourceMappingURL=style.css.map */
