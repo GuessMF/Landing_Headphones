@@ -1,11 +1,11 @@
 html {
   font-family: "Montserrat", sans-serif;
+  background-color: #f5f5f5;
 }
 
 header {
   height: 100px;
   width: auto;
-  border: 1px black solid;
   background-color: #f5f5f5;
   display: flex;
   justify-content: center;
@@ -14,7 +14,7 @@ header {
 header .header-bar {
   display: flex;
   flex-direction: row;
-  width: 90%;
+  justify-content: end;
   height: 50px;
   padding: 30px;
   font-weight: 500;
@@ -35,7 +35,7 @@ header .header-bar .brand-name {
   font-weight: 400;
   font-size: 40px;
   line-height: 49px;
-  width: inherit;
+  margin-right: 20%;
 }
 header .header-bar .search-box {
   background: #ffffff;
@@ -87,7 +87,6 @@ header .login-box img {
 .rectangle {
   height: 80px;
   width: auto;
-  border: 1px black solid;
   background-color: #10b981;
   display: flex;
   align-items: center;
@@ -106,18 +105,22 @@ header .login-box img {
   color: #ffffff;
 }
 
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .first-content-box {
-  border: black 1px solid;
   height: 100%;
   display: flex;
+  justify-content: space-around;
 }
 .first-content-box .first-left-content-box {
-  border: black 1px solid;
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 45px;
 }
 .first-content-box .first-left-content-box h1 {
   font-family: "Montserrat";
@@ -132,6 +135,7 @@ header .login-box img {
 }
 .first-content-box .first-left-content-box button {
   background-color: #10b981;
+  margin: 15% 10%;
   width: 220px;
   height: 70px;
   border: none;
@@ -143,13 +147,8 @@ header .login-box img {
   font-family: "Montserrat";
 }
 .first-content-box .first-left-content-box-bottom {
-  margin-top: auto;
-  margin-bottom: 0;
   flex-direction: column;
   display: flex;
-}
-.first-content-box .first-left-content-box-bottom button {
-  margin: 40% 0;
 }
 .first-content-box .first-left-content-box-bottom span {
   display: grid;
@@ -172,11 +171,10 @@ header .login-box img {
   justify-content: center;
 }
 .first-content-box .first-right-content-box .first-right-content-box-picture {
-  border: black 1px solid;
-  height: 700px;
-  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .first-content-box .first-right-content-box .first-right-content-box-picture img {
-  margin-top: 25%;
-  width: 400px;
+  width: 370px;
 }/*# sourceMappingURL=style.css.map */

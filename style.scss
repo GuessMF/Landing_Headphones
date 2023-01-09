@@ -1,11 +1,12 @@
 html {
   font-family: "Montserrat", sans-serif;
+  background-color: #f5f5f5;
+  // background-color: aqua;
 }
 
 header {
   height: 100px;
   width: auto;
-  border: 1px black solid;
   background-color: #f5f5f5;
   display: flex;
   justify-content: center;
@@ -14,13 +15,12 @@ header {
   .header-bar {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    justify-content: end;
     height: 50px;
     padding: 30px;
     font-weight: 500;
     font-size: 16px;
     div {
-      //border: 1px black solid;
       width: 280px;
       height: 40px;
       margin: 0 20px;
@@ -35,16 +35,13 @@ header {
       font-weight: 400;
       font-size: 40px;
       line-height: 49px;
-      // margin-right: auto;
-      width: inherit;
+      margin-right: 20%;
     }
-
     .search-box {
       background: #ffffff;
       box-shadow: 0px 15px 50px rgba(46, 131, 158, 0.07);
       border-radius: 10px;
       border: none;
-      // width: inherit;
     }
     input {
       border: none;
@@ -88,11 +85,9 @@ header {
     }
   }
 }
-
 .rectangle {
   height: 80px;
   width: auto;
-  border: 1px black solid;
   background-color: #10b981;
   display: flex;
   align-items: center;
@@ -110,18 +105,20 @@ header {
     color: #ffffff;
   }
 }
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 .first-content-box {
-  border: black 1px solid;
   height: 100%;
   display: flex;
-
+  justify-content: space-around;
   .first-left-content-box {
-    border: black 1px solid;
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 45px;
     h1 {
       font-family: "Montserrat";
       font-style: normal;
@@ -135,6 +132,7 @@ header {
     }
     button {
       background-color: #10b981;
+      margin: 15% 10%;
       width: 220px;
       height: 70px;
       border: none;
@@ -147,17 +145,11 @@ header {
     }
   }
   .first-left-content-box-bottom {
-    margin-top: auto;
-    margin-bottom: 0;
     flex-direction: column;
     display: flex;
-    button {
-      margin: 40% 0;
-    }
     span {
       display: grid;
       grid-template-columns: [item-1-start] 33px [item-2-start] 33px [item-3-start] 33px [item-1-end] 65px [item-2-end] 130px [item-3-end];
-      //grid-template-rows: [item-1-start] 50px [item-2-start] 48px [item-1-end] 50px [item-2-end];
       grid-template-rows: [item-1-start] 50px;
     }
     img {
@@ -168,24 +160,20 @@ header {
       font-style: normal;
       font-weight: 500;
       font-size: 23px;
-      // line-height: 35px;
-
       color: #2b2626;
     }
   }
-
   .first-right-content-box {
     display: flex;
     align-items: center;
     justify-content: center;
 
     .first-right-content-box-picture {
-      border: black 1px solid;
-      height: 700px;
-      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       img {
-        margin-top: 25%;
-        width: 400px;
+        width: 370px;
       }
     }
   }
