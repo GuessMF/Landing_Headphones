@@ -398,30 +398,44 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    //border: black 1px solid;
-    .second-content-box__top-change__left {
+    .form_radio_btn {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 170px;
+      width: 220px;
       height: 90px;
       font-size: 26px;
       font-weight: 600;
-      // border: black 1px solid;
       color: #f5f5f5;
-      background-color: #10b981;
       border-radius: 50%;
     }
-    .second-content-box__top-change__right {
+
+    .form_radio_btn label {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 170px;
+      width: 190px;
       height: 90px;
-      font-size: 26px;
-      font-weight: 600;
+      border-radius: 50%;
+      color: #111111;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
 
-      //x  border: black 1px solid;
+    .form_radio_btn input[type="radio"]:checked + label {
+      background-color: #10b981;
+      color: #f7f9fc;
+    }
+
+    .form_radio_btn label:hover {
+      font-size: 28px;
+      width: 220px;
+      height: 100px;
+      margin: -10px;
+    }
+
+    .form_radio_btn input[type="radio"]:disabled + label {
+      background: #efefef;
     }
   }
 

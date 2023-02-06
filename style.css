@@ -370,26 +370,40 @@ main {
   flex-direction: row;
   justify-content: space-between;
 }
-.second-content-box .second-content-box__top-change .second-content-box__top-change__left {
+.second-content-box .second-content-box__top-change .form_radio_btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 220px;
   height: 90px;
   font-size: 26px;
   font-weight: 600;
   color: #f5f5f5;
-  background-color: #10b981;
   border-radius: 50%;
 }
-.second-content-box .second-content-box__top-change .second-content-box__top-change__right {
+.second-content-box .second-content-box__top-change .form_radio_btn label {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 190px;
   height: 90px;
-  font-size: 26px;
-  font-weight: 600;
+  border-radius: 50%;
+  color: #111111;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.second-content-box .second-content-box__top-change .form_radio_btn input[type=radio]:checked + label {
+  background-color: #10b981;
+  color: #f7f9fc;
+}
+.second-content-box .second-content-box__top-change .form_radio_btn label:hover {
+  font-size: 28px;
+  width: 220px;
+  height: 100px;
+  margin: -10px;
+}
+.second-content-box .second-content-box__top-change .form_radio_btn input[type=radio]:disabled + label {
+  background: #efefef;
 }
 .second-content-box .second-content-box__carousel {
   display: flex;
