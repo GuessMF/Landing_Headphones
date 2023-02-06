@@ -114,7 +114,7 @@
       <div class="second-content-box">
         <h3>Top seller</h3>
         <div class="second-content-box__top-change">
-          <div class="form_radio_btn">
+          <div class="second-content-box__radio_btn">
             <input
               id="left__button"
               type="radio"
@@ -125,8 +125,7 @@
             />
             <label for="left__button">Top picks</label>
           </div>
-
-          <div class="form_radio_btn">
+          <div class="second-content-box__radio_btn">
             <input
               id="right__button"
               type="radio"
@@ -138,13 +137,15 @@
           </div>
         </div>
         <div class="second-content-box__carousel">
-          <!-- <div class="second-content-box__carousel__left-arrow"> -->
-          <img
-            class="second-content-box__carousel__arrows"
-            src="images/arrow-left.png"
-            alt=""
-            srcset=""
-          />
+          <div class="second-content-box__carousel__arrows">
+            <img
+              class="second-content-box__carousel__arrows_img"
+              src="images/arrow-left.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+
           <!-- </div> -->
           <div class="second-content-box__carousel__block">
             <div class="second-content-box__carousel__block__main-left">
@@ -220,34 +221,62 @@
             </div>
             <button>Add to cart</button>
           </div>
-
-          <!-- <div class="second-content-box__carousel_right-arrow"> -->
-          <img
-            class="second-content-box__carousel__arrows"
-            src="images/arrow-right.png"
-            alt=""
-            srcset=""
-          />
-          <!-- </div> -->
+          <div class="second-content-box__carousel__arrows">
+            <img
+              class="second-content-box__carousel__arrows_img"
+              src="images/arrow-right.png"
+              alt=""
+              srcset=""
+            />
+          </div>
         </div>
       </div>
       <div class="the-third-content-box">
         <h3>Trending Earphones</h3>
         <div class="the-third-content-box__top-change">
-          <span class="the-third-content-box__top-change__left">Earbuds</span>
-          <span class="the-third-content-box__top-change__middle"
-            >Wireless</span
-          >
-          <span class="the-third-content-box__top-change__right">Wired</span>
+          <div class="the-third-content-box__radio_btn">
+            <input
+              id="third__left__button"
+              type="radio"
+              name="third_radio_btn"
+              value="Earbuds"
+              style="display: none"
+              checked
+            />
+            <label for="third__left__button">Earbuds</label>
+          </div>
+          <div class="the-third-content-box__radio_btn">
+            <input
+              id="third__middle__button"
+              type="radio"
+              name="third_radio_btn"
+              value="Wireless"
+              style="display: none"
+            />
+            <label for="third__middle__button">Wireless</label>
+          </div>
+          <div class="the-third-content-box__radio_btn">
+            <input
+              id="third__right__button"
+              type="radio"
+              name="third_radio_btn"
+              value="Wired"
+              style="display: none"
+            />
+            <label for="third__right__button">Wired</label>
+          </div>
         </div>
         <div class="the-third-content-box__carousel">
           <!-- <div class="the-third-content-box__carousel__left-arrow"> -->
-          <img
-            class="the-third-content-box__carousel__arrows"
-            src="images/arrow-left.png"
-            alt=""
-            srcset=""
-          />
+          <div class="the-third-content-box__carousel__arrows">
+            <img
+              class="the-third-content-box__carousel__arrows_img"
+              src="images/arrow-left.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+
           <!-- </div> -->
           <div class="the-third-content-box__carousel__block">
             <div class="the-third-content-box__carousel__block__main-left">
@@ -330,14 +359,14 @@
             <button>Add to cart</button>
           </div>
 
-          <!-- <div class="the-third-content-box__carousel_right-arrow"> -->
-          <img
-            class="the-third-content-box__carousel__arrows"
-            src="images/arrow-right.png"
-            alt=""
-            srcset=""
-          />
-          <!-- </div> -->
+          <div class="the-third-content-box__carousel__arrows">
+            <img
+              class="the-third-content-box__carousel__arrows_img"
+              src="images/arrow-right.png"
+              alt=""
+              srcset=""
+            />
+          </div>
         </div>
       </div>
       <div class="second-extra-section">
