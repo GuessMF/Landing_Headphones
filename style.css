@@ -196,6 +196,11 @@ header .login-box:hover {
   -webkit-animation: rect 1.5s forwards;
           animation: rect 1.5s forwards;
 }
+@media (max-width: 400px) {
+  .rectangle {
+    border-radius: 10px;
+  }
+}
 @-webkit-keyframes rect {
   0% {
     transform: translateX(150%);
@@ -239,6 +244,11 @@ main .first-content-box {
   height: 100%;
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 400px) {
+  main .first-content-box {
+    border-radius: 10px;
+  }
 }
 main .first-content-box .first-left-content-box {
   width: 50%;
@@ -390,6 +400,11 @@ main .first-content-box .first-right-content-box .first-right-content-box-pictur
     width: 200px;
   }
 }
+@media (max-width: 400px) {
+  main .first-content-box .first-right-content-box .first-right-content-box-picture img {
+    width: 170px;
+  }
+}
 main .extra-section {
   width: auto;
   height: 500px;
@@ -412,6 +427,11 @@ main .extra-section {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+  }
+}
+@media (max-width: 400px) {
+  main .extra-section {
+    border-radius: 10px;
   }
 }
 @-webkit-keyframes extra1 {
@@ -716,7 +736,7 @@ main .second-content-box .second-content-box__top-change .second-content-box__ra
   background: #efefef;
 }
 main .second-content-box .second-content-box__carousel {
-  display: none;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
@@ -810,11 +830,21 @@ main .second-content-box .second-content-box__carousel .second-content-box__caro
 main .second-content-box .second-content-box__carousel .second-content-box__carousel__block .second-content-box__carousel__block__main-left {
   background-color: #d8f1e3;
 }
+@media (max-width: 400px) {
+  main .second-content-box .second-content-box__carousel .second-content-box__carousel__block .second-content-box__carousel__block__main-left {
+    display: none;
+  }
+}
 main .second-content-box .second-content-box__carousel .second-content-box__carousel__block .second-content-box__carousel__block__main-middle {
   background-color: #c9f2ff;
 }
 main .second-content-box .second-content-box__carousel .second-content-box__carousel__block .second-content-box__carousel__block__main-right {
   background-color: #e5d5ff;
+}
+@media (max-width: 400px) {
+  main .second-content-box .second-content-box__carousel .second-content-box__carousel__block .second-content-box__carousel__block__main-right {
+    display: none;
+  }
 }
 main .second-content-box .second-content-box__carousel .second-content-box__carousel__block .second-content-box__carousel__block__main-left__info {
   background-color: #f5f5f5;
@@ -902,6 +932,16 @@ main .second-content-box .second-content-box__carousel .second-content-box__caro
   width: 300px;
   height: 65px;
 }
+@media (max-width: 400px) {
+  main .second-content-box .second-content-box__carousel .left_box {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  main .second-content-box .second-content-box__carousel .right_box {
+    display: none;
+  }
+}
 main .the-third-content-box {
   display: flex;
   flex-direction: column;
@@ -912,6 +952,7 @@ main .the-third-content-box h3 {
   font-size: 44px;
   font-weight: 600;
   margin-top: 100px;
+  text-align: center;
 }
 main .the-third-content-box .the-third-content-box__top-change {
   width: 400px;
@@ -980,7 +1021,7 @@ main .the-third-content-box .the-third-content-box__top-change .the-third-conten
   background: #efefef;
 }
 main .the-third-content-box .the-third-content-box__carousel {
-  display: none;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
@@ -1195,6 +1236,16 @@ main .the-third-content-box .the-third-content-box__carousel .the-third-content-
   width: 300px;
   height: 65px;
 }
+@media (max-width: 400px) {
+  main .the-third-content-box .the-third-content-box__carousel .left_box {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  main .the-third-content-box .the-third-content-box__carousel .right_box {
+    display: none;
+  }
+}
 main .second-extra-section .second-extra-section__header {
   display: flex;
   flex-direction: row;
@@ -1224,6 +1275,11 @@ main .second-extra-section .second-extra-section__main {
     height: -moz-fit-content;
     height: fit-content;
     flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  main .second-extra-section .second-extra-section__main {
+    border-radius: 10px;
   }
 }
 main .second-extra-section .second-extra-section__main .second-extra-section__main_left {
