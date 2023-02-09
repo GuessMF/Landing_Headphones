@@ -709,7 +709,7 @@ main .second-content-box .second-content-box__top-change .second-content-box__ra
 @media (max-width: 400px) {
   main .second-content-box .second-content-box__top-change .second-content-box__radio_btn {
     font-size: 16px;
-    width: auto;
+    width: 40%;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -727,7 +727,7 @@ main .second-content-box .second-content-box__top-change .second-content-box__ra
 }
 @media (max-width: 400px) {
   main .second-content-box .second-content-box__top-change .second-content-box__radio_btn label {
-    width: 100px;
+    height: 70px;
   }
 }
 main .second-content-box .second-content-box__top-change .second-content-box__radio_btn input[type=radio]:checked + label {
@@ -739,6 +739,14 @@ main .second-content-box .second-content-box__top-change .second-content-box__ra
   width: 220px;
   height: 100px;
   margin: -10px;
+}
+@media (max-width: 400px) {
+  main .second-content-box .second-content-box__top-change .second-content-box__radio_btn label:hover {
+    width: 100%;
+    height: 70px;
+    font-size: 20px;
+    margin: 0;
+  }
 }
 main .second-content-box .second-content-box__top-change .second-content-box__radio_btn input[type=radio]:disabled + label {
   background: #efefef;
