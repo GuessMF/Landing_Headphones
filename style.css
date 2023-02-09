@@ -872,6 +872,12 @@ main .second-content-box .second-content-box__carousel .second-content-box__caro
     width: 85%;
   }
 }
+@media (max-width: 400px) {
+  main .second-content-box .second-content-box__carousel .second-content-box__carousel__block .second-content-box__carousel__block__main-left__info {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
 main .second-content-box .second-content-box__carousel .second-content-box__carousel__block .second-content-box__carousel__block__main-left__info .second-content-box__carousel__block__main-left__info__name {
   font-size: 23px;
   font-weight: 300;

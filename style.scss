@@ -842,6 +842,9 @@ main {
           @media (max-width: 1000px) {
             width: 85%;
           }
+          @media (max-width: 400px) {
+            height: fit-content;
+          }
 
           .second-content-box__carousel__block__main-left__info__name {
             font-size: 23px;
