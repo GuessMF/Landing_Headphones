@@ -89,7 +89,7 @@ header .header-bar .search-box {
   border: none;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
 }
 @media (max-width: 1000px) {
   header .header-bar .search-box {
@@ -99,7 +99,7 @@ header .header-bar .search-box {
 }
 header .header-bar input {
   border: none;
-  width: 80%;
+  width: 70%;
   height: 30px;
   outline: none;
 }
