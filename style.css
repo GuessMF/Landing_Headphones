@@ -15,22 +15,12 @@ header {
   justify-content: center;
   background-color: #f5f5f5;
   transform: translateX(-150%);
-  -webkit-animation: ani 1.5s forwards;
-          animation: ani 1.5s forwards;
+  animation: ani 1.5s forwards;
 }
 @media (max-width: 1000px) {
   header {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-  }
-}
-@-webkit-keyframes ani {
-  0% {
-    transform: translateX(-150%);
-  }
-  100% {
-    transform: translateY(0);
   }
 }
 @keyframes ani {
@@ -56,7 +46,6 @@ header .header-bar {
     grid-template-columns: 3fr 1fr;
     grid-gap: 10px;
     justify-content: center;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -73,7 +62,6 @@ header .header-bar div {
   margin: 0 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 @media (max-width: 1300px) {
   header .header-bar div {
@@ -99,6 +87,9 @@ header .header-bar .search-box {
   box-shadow: 0px 15px 50px rgba(46, 131, 158, 0.07);
   border-radius: 10px;
   border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 @media (max-width: 1000px) {
   header .header-bar .search-box {
@@ -117,11 +108,6 @@ header .header-bar ::-moz-placeholder {
   color: rgba(23, 23, 24, 0.2);
   opacity: 1; /* Firefox */
 }
-header .header-bar :-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgba(23, 23, 24, 0.2);
-  opacity: 1; /* Firefox */
-}
 header .header-bar ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: rgba(23, 23, 24, 0.2);
@@ -133,6 +119,10 @@ header .header-bar button {
   border-radius: 5px;
   height: 25px;
   width: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 header .header-bar button img {
   width: 15px;
@@ -145,9 +135,13 @@ header .cart-box {
   text-align: center;
   transition: all 0.3s;
   cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
 }
 header .cart-box img {
   margin-right: 10px;
+  margin-left: 10px;
   width: 30px;
   height: 25px;
   transition: all 0.3s;
@@ -167,9 +161,13 @@ header .login-box {
   color: #f5f5f5;
   transition: all 0.3s;
   cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
 }
 header .login-box img {
   margin-right: 10px;
+  margin-left: 10px;
   width: 30px;
   height: 25px;
   transition: all 0.3s;
@@ -193,20 +191,11 @@ header .login-box:hover {
   align-items: center;
   justify-content: center;
   transform: translateX(-150%);
-  -webkit-animation: rect 1.5s forwards;
-          animation: rect 1.5s forwards;
+  animation: rect 1.5s forwards;
 }
 @media (max-width: 400px) {
   .rectangle {
     border-radius: 10px;
-  }
-}
-@-webkit-keyframes rect {
-  0% {
-    transform: translateX(150%);
-  }
-  100% {
-    transform: translateY(0);
   }
 }
 @keyframes rect {
@@ -257,16 +246,7 @@ main .first-content-box .first-left-content-box {
   align-items: flex-start;
   justify-content: space-between;
   transform: translateY(-150%);
-  -webkit-animation: flb 1.5s forwards;
-          animation: flb 1.5s forwards;
-}
-@-webkit-keyframes flb {
-  0% {
-    transform: translateY(150%);
-  }
-  100% {
-    transform: translateY(0);
-  }
+  animation: flb 1.5s forwards;
 }
 @keyframes flb {
   0% {
@@ -368,16 +348,7 @@ main .first-content-box .first-right-content-box .first-right-content-box-pictur
   flex-direction: column;
   align-items: center;
   transform: translateX(-150%);
-  -webkit-animation: frb 1.5s forwards;
-          animation: frb 1.5s forwards;
-}
-@-webkit-keyframes frb {
-  0% {
-    transform: translateX(150%);
-  }
-  100% {
-    transform: translateY(0);
-  }
+  animation: frb 1.5s forwards;
 }
 @keyframes frb {
   0% {
@@ -413,8 +384,7 @@ main .extra-section {
   display: flex;
   flex-direction: row;
   transform: translateX(-150%);
-  -webkit-animation: extra1 2s forwards;
-          animation: extra1 2s forwards;
+  animation: extra1 2s forwards;
 }
 @media (max-width: 900px) {
   main .extra-section {
@@ -424,7 +394,6 @@ main .extra-section {
 @media (max-width: 650px) {
   main .extra-section {
     flex-direction: column;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -432,14 +401,6 @@ main .extra-section {
 @media (max-width: 400px) {
   main .extra-section {
     border-radius: 10px;
-  }
-}
-@-webkit-keyframes extra1 {
-  0% {
-    transform: translateY(150%);
-  }
-  100% {
-    transform: translateY(0);
   }
 }
 @keyframes extra1 {
@@ -678,7 +639,6 @@ main .second-content-box .second-content-box__top-change {
 }
 @media (max-width: 400px) {
   main .second-content-box .second-content-box__top-change {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     flex-direction: row;
@@ -701,7 +661,6 @@ main .second-content-box .second-content-box__top-change .second-content-box__ra
   main .second-content-box .second-content-box__top-change .second-content-box__radio_btn {
     font-size: 16px;
     width: auto;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -963,7 +922,6 @@ main .the-third-content-box .the-third-content-box__top-change {
 }
 @media (max-width: 400px) {
   main .the-third-content-box .the-third-content-box__top-change {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     flex-direction: row;
@@ -986,7 +944,6 @@ main .the-third-content-box .the-third-content-box__top-change .the-third-conten
   main .the-third-content-box .the-third-content-box__top-change .the-third-content-box__radio_btn {
     font-size: 16px;
     width: auto;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -1271,7 +1228,6 @@ main .second-extra-section .second-extra-section__main {
 }
 @media (max-width: 650px) {
   main .second-extra-section .second-extra-section__main {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     flex-direction: column;
