@@ -835,6 +835,7 @@ main .second-content-box .second-content-box__carousel .second-content-box__caro
   main .second-content-box .second-content-box__carousel .second-content-box__carousel__block div img {
     width: 100px;
     height: 100px;
+    margin-top: 15px;
   }
 }
 main .second-content-box .second-content-box__carousel .second-content-box__carousel__block div:hover {
