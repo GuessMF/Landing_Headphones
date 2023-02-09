@@ -140,6 +140,9 @@ header .cart-box {
   flex-direction: row;
   justify-content: start;
 }
+header .cart-box a {
+  width: 70%;
+}
 header .cart-box img {
   margin-right: 10px;
   margin-left: 10px;
@@ -165,6 +168,9 @@ header .login-box {
   display: flex;
   flex-direction: row;
   justify-content: start;
+}
+header .login-box a {
+  width: 70%;
 }
 header .login-box img {
   margin-right: 10px;
