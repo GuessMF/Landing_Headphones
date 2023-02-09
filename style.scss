@@ -117,6 +117,7 @@ header {
       border-radius: 5px;
       height: 25px;
       width: 25px;
+      margin-right: 10px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -229,6 +230,9 @@ header {
     color: #ffffff;
     //  color: #111111;
     transition: all 0.3s;
+    @media (max-width: 400px) {
+      font-size: 16px;
+    }
 
     &:hover {
       color: #ececec;
