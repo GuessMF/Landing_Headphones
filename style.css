@@ -312,6 +312,15 @@ main .first-content-box .first-left-content-box button:hover {
     font-size: 16px;
   }
 }
+@media (max-width: 400px) {
+  main .first-content-box .first-left-content-box button:hover {
+    background-color: #12d494;
+    width: 180px;
+    height: 50px;
+    font-size: 18px;
+    text-shadow: 1px 1px #111111;
+  }
+}
 main .first-content-box .first-left-content-box-bottom {
   flex-direction: column;
   display: flex;
