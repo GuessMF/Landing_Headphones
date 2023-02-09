@@ -831,6 +831,12 @@ main .second-content-box .second-content-box__carousel .second-content-box__caro
     width: 120px;
   }
 }
+@media (max-width: 400px) {
+  main .second-content-box .second-content-box__carousel .second-content-box__carousel__block div img {
+    width: 100px;
+    height: 100px;
+  }
+}
 main .second-content-box .second-content-box__carousel .second-content-box__carousel__block div:hover {
   background-color: rgb(245, 245, 245);
   width: 390px;
