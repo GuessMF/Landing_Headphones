@@ -207,12 +207,14 @@ header {
   width: auto;
   background-color: #10b981;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   transform: translateX(-150%);
   animation: rect 1.5s forwards;
   @media (max-width: 400px) {
     border-radius: 10px;
+    height: 60px;
   }
 
   @keyframes rect {
