@@ -408,6 +408,7 @@ main .extra-section {
   flex-direction: row;
   transform: translateX(-150%);
   animation: extra1 2s forwards;
+  justify-content: space-between;
 }
 @media (max-width: 900px) {
   main .extra-section {
@@ -435,7 +436,7 @@ main .extra-section {
   }
 }
 main .extra-section .extra-section__left-content {
-  width: 55%;
+  width: 40%;
   height: 100%;
 }
 @media (max-width: 650px) {
@@ -530,7 +531,7 @@ main .extra-section .extra-section__left-content .extra-section__left-content__p
   font-weight: 600;
 }
 main .extra-section .extra-section__right-content {
-  width: 45%;
+  width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
