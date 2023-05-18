@@ -1748,8 +1748,6 @@ footer .footer-bottom .footer-bottom__right-content {
 }
 footer .footer-bottom .footer-bottom__right-content img {
   width: 30px;
-  width: -moz-fit-content;
-  width: fit-content;
   transition: all 0.3s;
 }
 @media (max-width: 430px) {
