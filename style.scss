@@ -832,6 +832,7 @@ main {
           background-color: #f5f5f5;
           margin-bottom: 15px;
           justify-content: space-around;
+          height: 75px;
           @media (max-width: 1000px) {
             width: 85%;
           }
@@ -1103,6 +1104,8 @@ main {
           background-color: #f5f5f5;
           margin-bottom: 15px;
           justify-content: space-around;
+          height: 75px;
+
           @media (max-width: 1000px) {
             width: 85%;
           }
@@ -1110,6 +1113,7 @@ main {
           .the-third-content-box__carousel__block__main-left__info {
             font-size: 23px;
             font-weight: 300;
+            height: 75px;
             @media (max-width: 1000px) {
               font-size: 18px;
               font-weight: 300;
