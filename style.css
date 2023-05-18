@@ -1,10 +1,13 @@
 html {
   font-family: "Montserrat", sans-serif;
   background-color: #f5f5f5;
+  cursor: default;
 }
 
 body {
   overflow-x: hidden;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 header {
@@ -306,12 +309,12 @@ main .first-content-box .first-left-content-box button {
   color: #ffffff;
   font-family: "Montserrat";
   transition: all 0.3s;
+  cursor: pointer;
 }
 main .first-content-box .first-left-content-box button:hover {
   background-color: #12d494;
-  width: 230px;
-  height: 75px;
-  margin-top: 0;
+  position: relative;
+  color: #efefef;
 }
 @media (max-width: 650px) {
   main .first-content-box .first-left-content-box button {
@@ -626,7 +629,7 @@ main .extra-section .extra-section__right-content .extra-section__right-content_
   width: 280px;
   height: 65px;
   margin-bottom: -14px;
-  margin-right: -15px;
+  margin-right: -6px;
 }
 @media (max-width: 400px) {
   main .extra-section .extra-section__right-content .extra-section__right-content__information .extra-section__right-content__information__buttons button:hover {
@@ -766,6 +769,7 @@ main .second-content-box .second-content-box__carousel .second-content-box__caro
   align-items: center;
   width: 40px;
   transition: all 0.3s;
+  cursor: pointer;
 }
 main .second-content-box .second-content-box__carousel .second-content-box__carousel__arrows img {
   width: 15px;
@@ -803,7 +807,7 @@ main .second-content-box .second-content-box__carousel .second-content-box__caro
   justify-content: space-between;
   align-items: center;
   border-radius: 15px;
-  transition: all 0.3s;
+  transition: all 0.7s;
   cursor: pointer;
 }
 @media (max-width: 1000px) {
@@ -840,9 +844,8 @@ main .second-content-box .second-content-box__carousel .second-content-box__caro
   }
 }
 main .second-content-box .second-content-box__carousel .second-content-box__carousel__block div:hover {
-  background-color: rgb(245, 245, 245);
-  width: 390px;
-  height: 390px;
+  width: 360px;
+  height: 360px;
 }
 main .second-content-box .second-content-box__carousel .second-content-box__carousel__block div:hover span {
   display: none;
@@ -850,6 +853,19 @@ main .second-content-box .second-content-box__carousel .second-content-box__caro
 main .second-content-box .second-content-box__carousel .second-content-box__carousel__block div:hover img {
   width: 380px;
   height: 380px;
+}
+@media (max-width: 430px) {
+  main .second-content-box .second-content-box__carousel .second-content-box__carousel__block div:hover {
+    width: 200px;
+    height: 200px;
+  }
+  main .second-content-box .second-content-box__carousel .second-content-box__carousel__block div:hover img {
+    width: 160px;
+    height: 160px;
+  }
+  main .second-content-box .second-content-box__carousel .second-content-box__carousel__block div:hover div {
+    display: none;
+  }
 }
 main .second-content-box .second-content-box__carousel .second-content-box__carousel__block .second-content-box__carousel__block__main-left {
   background-color: #d8f1e3;
@@ -936,7 +952,7 @@ main .second-content-box .second-content-box__carousel .second-content-box__caro
 }
 @media (max-width: 900px) {
   main .second-content-box .second-content-box__carousel .second-content-box__carousel__block .second-content-box__carousel__block__main-left__info .second-content-box__carousel__block__main-left__info__price {
-    font-size: 16px;
+    font-size: 13px;
   }
 }
 main .second-content-box .second-content-box__carousel .second-content-box__carousel__block button {
@@ -959,8 +975,6 @@ main .second-content-box .second-content-box__carousel .second-content-box__caro
 }
 main .second-content-box .second-content-box__carousel .second-content-box__carousel__block button:hover {
   background-color: #12d494;
-  width: 300px;
-  height: 65px;
 }
 @media (max-width: 400px) {
   main .second-content-box .second-content-box__carousel .left_box {
@@ -1045,6 +1059,14 @@ main .the-third-content-box .the-third-content-box__top-change .the-third-conten
   height: 100px;
   margin: -10px;
 }
+@media (max-width: 430px) {
+  main .the-third-content-box .the-third-content-box__top-change .the-third-content-box__radio_btn label:hover {
+    width: 100px;
+    height: 80px;
+    font-size: 16px;
+    margin: 0;
+  }
+}
 main .the-third-content-box .the-third-content-box__top-change .the-third-content-box__radio_btn input[type=radio]:disabled + label {
   background: #efefef;
 }
@@ -1062,6 +1084,7 @@ main .the-third-content-box .the-third-content-box__carousel .the-third-content-
   align-items: center;
   width: 40px;
   transition: all 0.3s;
+  cursor: pointer;
 }
 main .the-third-content-box .the-third-content-box__carousel .the-third-content-box__carousel__arrows img {
   width: 15px;
@@ -1099,8 +1122,9 @@ main .the-third-content-box .the-third-content-box__carousel .the-third-content-
   justify-content: space-between;
   align-items: center;
   border-radius: 15px;
-  transition: all 0.3s;
+  transition: all 0.7s;
   cursor: pointer;
+  background-color: #2a7979;
 }
 @media (max-width: 1000px) {
   main .the-third-content-box .the-third-content-box__carousel .the-third-content-box__carousel__block div {
@@ -1130,9 +1154,8 @@ main .the-third-content-box .the-third-content-box__carousel .the-third-content-
   }
 }
 main .the-third-content-box .the-third-content-box__carousel .the-third-content-box__carousel__block div:hover {
-  background-color: rgb(245, 245, 245);
-  width: 390px;
-  height: 390px;
+  width: 360px;
+  height: 360px;
 }
 main .the-third-content-box .the-third-content-box__carousel .the-third-content-box__carousel__block div:hover span {
   display: none;
@@ -1141,14 +1164,27 @@ main .the-third-content-box .the-third-content-box__carousel .the-third-content-
   width: 380px;
   height: 380px;
 }
+@media (max-width: 430px) {
+  main .the-third-content-box .the-third-content-box__carousel .the-third-content-box__carousel__block div:hover {
+    width: 200px;
+    height: 200px;
+  }
+  main .the-third-content-box .the-third-content-box__carousel .the-third-content-box__carousel__block div:hover img {
+    width: 160px;
+    height: 160px;
+  }
+  main .the-third-content-box .the-third-content-box__carousel .the-third-content-box__carousel__block div:hover div {
+    display: none;
+  }
+}
 main .the-third-content-box .the-third-content-box__carousel .the-third-content-box__carousel__block .the-third-content-box__carousel__block__main-left {
-  background-color: #e0efff;
+  background-color: #b5c1cf;
 }
 main .the-third-content-box .the-third-content-box__carousel .the-third-content-box__carousel__block .the-third-content-box__carousel__block__main-middle {
-  background-color: #e8f9ff;
+  background-color: #adceda;
 }
 main .the-third-content-box .the-third-content-box__carousel .the-third-content-box__carousel__block .the-third-content-box__carousel__block__main-right {
-  background-color: #d3fbfb;
+  background-color: #bae7e7;
 }
 main .the-third-content-box .the-third-content-box__carousel .the-third-content-box__carousel__block .the-third-content-box__carousel__block__main-left__info {
   background-color: #f5f5f5;
@@ -1238,7 +1274,7 @@ main .the-third-content-box .the-third-content-box__carousel .the-third-content-
 }
 @media (max-width: 900px) {
   main .the-third-content-box .the-third-content-box__carousel .the-third-content-box__carousel__block .the-third-content-box__carousel__block__main-left__info .the-third-content-box__carousel__block__main-left__info__price {
-    font-size: 16px;
+    font-size: 13px;
   }
 }
 main .the-third-content-box .the-third-content-box__carousel .the-third-content-box__carousel__block button {
@@ -1261,8 +1297,6 @@ main .the-third-content-box .the-third-content-box__carousel .the-third-content-
 }
 main .the-third-content-box .the-third-content-box__carousel .the-third-content-box__carousel__block button:hover {
   background-color: #12d494;
-  width: 300px;
-  height: 65px;
 }
 @media (max-width: 400px) {
   main .the-third-content-box .the-third-content-box__carousel .left_box {
@@ -1475,10 +1509,6 @@ main .second-extra-section .second-extra-section__main .second-extra-section__ma
 }
 main .second-extra-section .second-extra-section__main .second-extra-section__main_right .second-extra-section__main_right__information .second-extra-section__main_right__information__buttons button:hover {
   background-color: #12d494;
-  width: 280px;
-  height: 65px;
-  margin-bottom: -14px;
-  margin-right: -15px;
 }
 @media (max-width: 700px) {
   main .second-extra-section .second-extra-section__main .second-extra-section__main_right .second-extra-section__main_right__information .second-extra-section__main_right__information__buttons button {
@@ -1508,7 +1538,6 @@ main .second-extra-section .second-extra-section__main .second-extra-section__ma
 }
 main .second-extra-section .second-extra-section__main .second-extra-section__main_right .second-extra-section__main_right__information .second-extra-section__main_right__information__buttons a:hover {
   color: #ececec;
-  font-size: 21px;
   text-shadow: 3px 3px #7654ad;
 }
 @media (max-width: 700px) {
@@ -1518,9 +1547,10 @@ main .second-extra-section .second-extra-section__main .second-extra-section__ma
     font-size: 14px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   main .second-extra-section .second-extra-section__main .second-extra-section__main_right .second-extra-section__main_right__information .second-extra-section__main_right__information__buttons a {
     width: 50%;
+    margin: 0;
   }
 }
 
@@ -1541,6 +1571,11 @@ footer .footer-top {
   justify-content: end;
   width: auto;
 }
+@media (max-width: 430px) {
+  footer .footer-top {
+    justify-content: start;
+  }
+}
 footer .footer-top__items {
   display: flex;
   flex-direction: row;
@@ -1549,6 +1584,11 @@ footer .footer-top__items {
   width: 50%;
   align-items: center;
   margin-bottom: 0;
+}
+@media (max-width: 430px) {
+  footer .footer-top__items {
+    width: 100%;
+  }
 }
 footer .footer-top__items p {
   font-size: 22px;
@@ -1569,10 +1609,6 @@ footer .footer-top__items button {
 }
 footer .footer-top__items button:hover {
   background-color: #12d494;
-  width: 230px;
-  height: 65px;
-  margin-bottom: -14px;
-  margin-right: -15px;
 }
 footer .footer-main {
   display: flex;
@@ -1667,34 +1703,31 @@ footer .footer-bottom .footer-bottom__left-content {
   justify-content: space-between;
   width: auto;
   transition: all 0.3s;
+  gap: 26px;
 }
 footer .footer-bottom .footer-bottom__right-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 52px;
+  height: 25px;
 }
 @media (max-width: 400px) {
   footer .footer-bottom .footer-bottom__right-content {
-    width: 50%;
-    justify-content: space-around;
+    height: 20px;
+  }
+}
+footer .footer-bottom .footer-bottom__right-content img {
+  width: 30px;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: all 0.3s;
+}
+@media (max-width: 430px) {
+  footer .footer-bottom .footer-bottom__right-content img {
+    width: 20px;
   }
 }
 footer .footer-bottom .footer-bottom__right-content .footer-bottom__facebook-logo {
-  width: 8px;
-  transition: all 0.3s;
-}
-footer .footer-bottom .footer-bottom__right-content .footer-bottom__facebook-logo:hover {
-  width: 17px;
-  height: 30px;
-  margin-top: -30px;
-}
-footer .footer-bottom .footer-bottom__right-content img {
-  width: 15px;
-  height: 15px;
-  transition: all 0.3s;
-}
-footer .footer-bottom .footer-bottom__right-content img:hover {
-  width: 50px;
-  height: 50px;
-  margin-top: -30px;
+  width: 13px;
 }/*# sourceMappingURL=style.css.map */
