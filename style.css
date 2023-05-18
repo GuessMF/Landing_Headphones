@@ -854,6 +854,19 @@ main .second-content-box .second-content-box__carousel .second-content-box__caro
   width: 380px;
   height: 380px;
 }
+@media (max-width: 900px) {
+  main .second-content-box .second-content-box__carousel .second-content-box__carousel__block div:hover {
+    width: 260px;
+    height: 380px;
+  }
+  main .second-content-box .second-content-box__carousel .second-content-box__carousel__block div:hover img {
+    width: 220px;
+    height: 220px;
+  }
+  main .second-content-box .second-content-box__carousel .second-content-box__carousel__block div:hover div {
+    display: none;
+  }
+}
 @media (max-width: 430px) {
   main .second-content-box .second-content-box__carousel .second-content-box__carousel__block div:hover {
     width: 200px;
@@ -1164,6 +1177,19 @@ main .the-third-content-box .the-third-content-box__carousel .the-third-content-
 main .the-third-content-box .the-third-content-box__carousel .the-third-content-box__carousel__block div:hover img {
   width: 380px;
   height: 380px;
+}
+@media (max-width: 900px) {
+  main .the-third-content-box .the-third-content-box__carousel .the-third-content-box__carousel__block div:hover {
+    width: 260px;
+    height: 380px;
+  }
+  main .the-third-content-box .the-third-content-box__carousel .the-third-content-box__carousel__block div:hover img {
+    width: 220px;
+    height: 220px;
+  }
+  main .the-third-content-box .the-third-content-box__carousel .the-third-content-box__carousel__block div:hover div {
+    display: none;
+  }
 }
 @media (max-width: 430px) {
   main .the-third-content-box .the-third-content-box__carousel .the-third-content-box__carousel__block div:hover {
